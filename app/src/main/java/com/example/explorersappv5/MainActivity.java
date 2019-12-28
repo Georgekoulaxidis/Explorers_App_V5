@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bLogin = (Button) findViewById(R.id.bLogin);
 
         bLogin.setOnClickListener(this);
-        
+
     }
 
     @Override
