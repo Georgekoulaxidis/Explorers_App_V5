@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button bLogin;
     EditText etUsername, etPassword;
+    TextView tForgot;
 
 
     @Override
@@ -21,10 +23,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         etUsername = (EditText) findViewById(R.id.etUsername);
         etPassword = (EditText) findViewById(R.id.etPassword);
         bLogin = (Button) findViewById(R.id.bLogin);
+        tForgot = (TextView) findViewById(R.id.tForgot);
 
         bLogin.setOnClickListener(this);
+        tForgot.setOnClickListener(this);
 
     }
+
+
+
+
 
     @Override
     public void onClick(View v) {
@@ -33,6 +41,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 break;
 
+            case R.id.tForgot:
+
+                break;
         }
+
     }
 }
